@@ -1007,8 +1007,8 @@ const LOGIN_CREDENTIALS = {
 
 // Login Component
 const LoginScreen = ({ onLogin }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState(LOGIN_CREDENTIALS.email);
+  const [password, setPassword] = useState(LOGIN_CREDENTIALS.password);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
